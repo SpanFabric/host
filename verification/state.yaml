@@ -3,19 +3,19 @@
   "bridge_version": "manual-verification-bridge-v1",
   "repository": "host",
   "authority_mode": "MANUAL_AUTHORITY",
-  "status": "BUILDING",
-  "previous_status": "BREAKER_FAILED",
+  "status": "INDEPENDENT_REVIEW_PENDING",
+  "previous_status": "BUILDING",
   "transition": {
-    "from": "BREAKER_FAILED",
-    "to": "BUILDING",
+    "from": "BUILDING",
+    "to": "INDEPENDENT_REVIEW_PENDING",
     "authority": "BUILDER"
   },
   "risk": {
     "class": "R2",
     "reason": "Initial governance/CI bootstrap; model may raise but not lower deterministic floor."
   },
-  "review_subject_digest": "954356953fd2800321a18dd3d0a3c017b8ad1d0b89d22962aaf762381a834edc",
-  "review_subject_commit": "2717d083688e80d8a94e0b0be79fba9deb28361d",
+  "review_subject_digest": "c723d9c74c08c08324478b2f3848f6deaeed82f3388292d76c2a9e3d8f52bec5",
+  "review_subject_commit": "8e2d4f59da25f83124ee964c45cf56ab7bb69254",
   "evidence": [
     {
       "id": "INITIAL-BASELINE-BOOTSTRAP-BUILDER-20260902",
@@ -116,6 +116,19 @@
       "finding_id": "WINDOWS_TRUSTED_RUNNER_HOST_SELECTION",
       "active": false,
       "report_path": "verification/reports/FRESH_BREAKER_WINDOWS_TRUSTED_RUNNER_HOST_SELECTION_20261003.json"
+    },
+    {
+      "id": "WINDOWS-TRUSTED-RUNNER-HOST-SELECTION-BUILDER-HOST-20261004",
+      "type": "BUILDER_REPORT",
+      "producer": "BUILDER",
+      "role": "BUILDER",
+      "authority": "MANUAL_AUTHORITY",
+      "commit_sha": "8e2d4f59da25f83124ee964c45cf56ab7bb69254",
+      "review_subject_digest": "c723d9c74c08c08324478b2f3848f6deaeed82f3388292d76c2a9e3d8f52bec5",
+      "created_at": "2026-10-04T00:14:41.1492124+02:00",
+      "verdict": "BUILDER_GREEN",
+      "active": true,
+      "report_path": "verification/reports/WINDOWS_TRUSTED_RUNNER_HOST_SELECTION_BUILDER_20261004.json"
     }
   ],
   "remediation_inputs": [
@@ -137,10 +150,10 @@
       "id": "WINDOWS_TRUSTED_RUNNER_HOST_SELECTION",
       "severity": "HIGH",
       "confirmed": true,
-      "status": "OPEN",
+      "status": "REMEDIATED_PENDING_FRESH_BREAKER",
       "scope": "CROSS_REPOSITORY",
       "report_path": "verification/reports/FRESH_BREAKER_WINDOWS_TRUSTED_RUNNER_HOST_SELECTION_20261003.json",
-      "summary": "Windows trusted-runner host selection resolves PATH bash before installed Git Bash in five affected repositories."
+      "summary": "Builder remediation is bound to material commit 8e2d4f59da25f83124ee964c45cf56ab7bb69254; independent Fresh BREAKER remains required."
     }
   ],
   "initial_baseline_bootstrap": {
