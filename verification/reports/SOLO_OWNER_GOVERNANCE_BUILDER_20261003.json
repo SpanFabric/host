@@ -1,0 +1,21 @@
+{
+  "id": "SOLO-OWNER-GOVERNANCE-BUILDER-20261003",
+  "type": "BUILDER_REPORT",
+  "producer": "BUILDER",
+  "role": "BUILDER",
+  "authority": "MANUAL_AUTHORITY",
+  "repository": "host",
+  "commit_sha": "2717d083688e80d8a94e0b0be79fba9deb28361d",
+  "review_subject_digest": "954356953fd2800321a18dd3d0a3c017b8ad1d0b89d22962aaf762381a834edc",
+  "created_at": "2026-10-03T21:34:11.7812585+02:00",
+  "verdict": "BUILDER_GREEN",
+  "lifecycle": "INDEPENDENT_REVIEW_PENDING",
+  "risk_class": "R2",
+  "scope": "Synchronize the Manual Verification Bridge lifecycle reopen and the explicit SOLO_OWNER hosting-authority contract; no product code changed.",
+  "validation": {
+    "trusted_runner": {"exit_code": 0, "base": "6426f89d5aee024cfda8a6f7035b49c267188990", "material_file_count": 10},
+    "exact_head_ci": {"verification_gate": "SUCCESS: 37148257175", "bootstrap_integrity": "SUCCESS: 37148257173"},
+    "local_full_suite": "BLOCKED_ENVIRONMENT: Windows system-temp fixture teardown encountered WinError 32; no source failure was inferred and the exact-head hosted suite is recorded separately."
+  },
+  "authority_limit": "Builder evidence only; it does not create Fresh BREAKER, Owner, merge, post-merge, hosting-control, gate, or phase-completion authority."
+}
