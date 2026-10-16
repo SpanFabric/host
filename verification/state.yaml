@@ -3,19 +3,19 @@
   "bridge_version": "manual-verification-bridge-v1",
   "repository": "host",
   "authority_mode": "MANUAL_AUTHORITY",
-  "status": "ACCEPTED",
-  "previous_status": "READY_FOR_OWNER_ACCEPTANCE",
+  "status": "BUILDING",
+  "previous_status": "ACCEPTED",
   "transition": {
-    "from": "READY_FOR_OWNER_ACCEPTANCE",
-    "to": "ACCEPTED",
-    "authority": "OWNER"
+    "from": "ACCEPTED",
+    "to": "BUILDING",
+    "authority": "BUILDER"
   },
   "risk": {
     "class": "R2",
     "reason": "Initial governance/CI bootstrap; model may raise but not lower deterministic floor."
   },
-  "review_subject_digest": "2a5586bef72567a33ec9c599face4a5635fb3ba331185821f3a7f4bc92e9072a",
-  "review_subject_commit": "573c4596abff78b9b6ca8ab706470999b705154e",
+  "review_subject_digest": "",
+  "review_subject_commit": "",
   "evidence": [
     {
       "id": "INITIAL-BASELINE-BOOTSTRAP-BUILDER-20260902",
@@ -179,7 +179,7 @@
       "review_subject_digest": "2a5586bef72567a33ec9c599face4a5635fb3ba331185821f3a7f4bc92e9072a",
       "created_at": "2026-10-04T07:08:07Z",
       "verdict": "BUILDER_GREEN",
-      "active": true,
+      "active": false,
       "report_path": "verification/reports/FBR_WTR_001_POSITIVE_PATH_FALLBACK_BUILDER_20261004.json"
     },
     {
@@ -192,7 +192,7 @@
       "review_subject_digest": "2a5586bef72567a33ec9c599face4a5635fb3ba331185821f3a7f4bc92e9072a",
       "created_at": "2026-10-04T12:54:53Z",
       "verdict": "ACCEPTED",
-      "active": true,
+      "active": false,
       "report_path": "verification/reports/FRESH_BREAKER_FBR_WTR_001_POSITIVE_PATH_FALLBACK_FINAL_20261004.json"
     },
     {
@@ -205,7 +205,7 @@
       "review_subject_digest": "2a5586bef72567a33ec9c599face4a5635fb3ba331185821f3a7f4bc92e9072a",
       "created_at": "2026-10-04T17:56:06+02:00",
       "verdict": "ACCEPTED",
-      "active": true,
+      "active": false,
       "report_path": "verification/reports/OWNER_ACCEPTANCE_SOLO_OWNER_20261004.json"
     }
   ],
