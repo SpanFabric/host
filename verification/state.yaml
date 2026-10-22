@@ -3,16 +3,16 @@
   "bridge_version": "manual-verification-bridge-v1",
   "repository": "host",
   "authority_mode": "MANUAL_AUTHORITY",
-  "status": "INDEPENDENT_REVIEW_PENDING",
-  "previous_status": "BUILDING",
+  "status": "BUILDING",
+  "previous_status": "INDEPENDENT_REVIEW_PENDING",
   "transition": {
-    "from": "BUILDING",
-    "to": "INDEPENDENT_REVIEW_PENDING",
+    "from": "INDEPENDENT_REVIEW_PENDING",
+    "to": "BUILDING",
     "authority": "BUILDER"
   },
   "risk": {
     "class": "R2",
-    "reason": "Initial governance/CI bootstrap; model may raise but not lower deterministic floor."
+    "reason": "SHARED-FB-001 durable lifecycle reachability remediation; previous evidence historical."
   },
   "review_subject_digest": "2f379035ffe29afd6c9014aeeb74a8fdb7c7af5e84a367a81867acb51bd5410d",
   "review_subject_commit": "ac93e3ee80ef96ffb90c4b11151dd4a8542b407d",
@@ -218,7 +218,7 @@
       "commit_sha": "ac93e3ee80ef96ffb90c4b11151dd4a8542b407d",
       "review_subject_digest": "2f379035ffe29afd6c9014aeeb74a8fdb7c7af5e84a367a81867acb51bd5410d",
       "created_at": "2026-10-16T12:21:55.626052+00:00",
-      "active": true,
+      "active": false,
       "report_path": "verification/reports/VERIFICATION_GATE_FIRST_PUSH_REMEDIATION_BUILDER_20261016.json"
     }
   ],
@@ -339,6 +339,7 @@
     "Portable CI-fixture followup validated locally on the new material identity; prior evidence stays inactive, independent Fresh Breaker required.",
     "Builder reopened solely to finalize FBR-WTR-001 positive Windows PATH suitability and matching manual text; historical reports remain immutable. No Owner, merge or PHASE-001 authority.",
     "FBR-WTR-001 positive-suitability Windows PATH fallback and matching manual finalized on the new material subject. FBR-WTR-002 workflow and FBR-WTR-003 runtime preserved. Historical exact-output claim is superseded by new evidence showing /c/path'name/runner, without rewriting old reports. Earlier empty native conversion observations remain disclosed; all six require a new independent Fresh Breaker.",
-    "Owner-authorized append-only persistence of FBR-WTR-001-POSITIVE-PATH-FALLBACK-FINAL-20261004: technical ACCEPTED bound to material 573c4596abff78b9b6ca8ab706470999b705154e and digest 2a5586bef72567a33ec9c599face4a5635fb3ba331185821f3a7f4bc92e9072a. Historical reports remain unchanged and historical failed Fresh BREAKER state evidence remains inactive. READY_FOR_OWNER_ACCEPTANCE is technical readiness only; hosting controls, Owner Acceptance, merge/post-merge, GATE-000 PASS, PHASE-000 completion and PHASE-001 authorization are not performed."
+    "Owner-authorized append-only persistence of FBR-WTR-001-POSITIVE-PATH-FALLBACK-FINAL-20261004: technical ACCEPTED bound to material 573c4596abff78b9b6ca8ab706470999b705154e and digest 2a5586bef72567a33ec9c599face4a5635fb3ba331185821f3a7f4bc92e9072a. Historical reports remain unchanged and historical failed Fresh BREAKER state evidence remains inactive. READY_FOR_OWNER_ACCEPTANCE is technical readiness only; hosting controls, Owner Acceptance, merge/post-merge, GATE-000 PASS, PHASE-000 completion and PHASE-001 authorization are not performed.",
+    "SHARED-FB-001 new material work reopens the exact PR subject through BUILDER. No Fresh Breaker, Owner or merge authority is asserted."
   ]
 }
