@@ -3,11 +3,11 @@
   "bridge_version": "manual-verification-bridge-v1",
   "repository": "host",
   "authority_mode": "MANUAL_AUTHORITY",
-  "status": "BUILDING",
-  "previous_status": "ACCEPTED",
+  "status": "INDEPENDENT_REVIEW_PENDING",
+  "previous_status": "BUILDING",
   "transition": {
-    "from": "ACCEPTED",
-    "to": "BUILDING",
+    "from": "BUILDING",
+    "to": "INDEPENDENT_REVIEW_PENDING",
     "authority": "BUILDER"
   },
   "risk": {
@@ -15,7 +15,7 @@
     "reason": "Shared missing-parent regression fixture remediation; runtime validator/policy/workflows unchanged."
   },
   "review_subject_digest": "1ba241f1dc6ca8025f17adbdeccb7d492350d3cd1662b43c67b916d29efcdfe4",
-  "review_subject_commit": "",
+  "review_subject_commit": "69e20f0249bbcfa235025abc0fe3650665e7da7d",
   "evidence": [
     {
       "id": "INITIAL-BASELINE-BOOTSTRAP-BUILDER-20260902",
@@ -260,6 +260,19 @@
       "verdict": "ACCEPTED",
       "active": false,
       "report_path": "verification/reports/OWNER_ACCEPTANCE_SHARED_FB_001_20261022.json"
+    },
+    {
+      "id": "MISSING-PARENT-FIXTURE-BUILDER-HOST-20261022",
+      "type": "BUILDER_REPORT",
+      "producer": "BUILDER",
+      "role": "BUILDER",
+      "authority": "MANUAL_AUTHORITY",
+      "commit_sha": "69e20f0249bbcfa235025abc0fe3650665e7da7d",
+      "review_subject_digest": "1ba241f1dc6ca8025f17adbdeccb7d492350d3cd1662b43c67b916d29efcdfe4",
+      "created_at": "2026-10-22T16:07:01.995214+00:00",
+      "verdict": "BUILDER_GREEN",
+      "active": true,
+      "report_path": "verification/reports/MISSING_PARENT_FIXTURE_BUILDER_20261022.json"
     }
   ],
   "remediation_inputs": [
@@ -391,7 +404,10 @@
       "status": "OPEN",
       "builder_disposition": "REMEDIATED_PENDING_FRESH_BREAKER",
       "summary": "Post-merge .github run39800181504 failed in missing-parent fixture setup because it assumed a loose object filesystem path; shared test must be storage-layout independent.",
-      "historical_failed_run": "https://github.com/SpanFabric/.github/actions/runs/39800181504"
+      "historical_failed_run": "https://github.com/SpanFabric/.github/actions/runs/39800181504",
+      "builder_material_sha": "69e20f0249bbcfa235025abc0fe3650665e7da7d",
+      "builder_review_subject_digest": "1ba241f1dc6ca8025f17adbdeccb7d492350d3cd1662b43c67b916d29efcdfe4",
+      "builder_report_path": "verification/reports/MISSING_PARENT_FIXTURE_BUILDER_20261022.json"
     }
   ],
   "initial_baseline_bootstrap": {
