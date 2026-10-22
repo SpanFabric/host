@@ -1,0 +1,559 @@
+windows-trusted-runner	Set up job	﻿2026-10-22T11:59:01.2005320Z Current runner version: '2.338.0'
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2039286Z ##[group]Runner Image Provisioner
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2039811Z Hosted Compute Agent
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2040135Z Version: 20261002.596
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2040564Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2040983Z Build Date: 2026-10-02T22:28:27Z
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2041724Z Worker ID: {f8a31035-ecdb-4cf3-a6e3-c8c5e6782804}
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2042149Z Region: centralus
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2042453Z Cloud: Azure
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2042776Z ##[endgroup]
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2043514Z ##[group]Operating System
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2043857Z Microsoft Windows Server 2025
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2044211Z 10.0.26100
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2044497Z Datacenter
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2044783Z ##[endgroup]
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2045092Z ##[group]Runner Image
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2045423Z Image: windows-2025-vs2026
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2045764Z Version: 20261007.264.1
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2046424Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20261007.264/images/windows/Windows2025-VS2026-Readme.md
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2047604Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20261007.264
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2048150Z ##[endgroup]
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2048811Z ##[group]GITHUB_TOKEN Permissions
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2049963Z Contents: read
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2050294Z Metadata: read
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2050597Z ##[endgroup]
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2051830Z Secret source: Actions
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2052302Z Cache mode: write
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2052736Z Prepare workflow directory
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2303880Z Prepare all required actions
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.2337552Z Getting action download info
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.4284278Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+windows-trusted-runner	Set up job	2026-10-22T11:59:01.5899480Z Complete job name: windows-trusted-runner
+windows-trusted-runner	Checkout	﻿2026-10-22T11:59:01.6903909Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6904784Z with:
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6905011Z   fetch-depth: 0
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6905251Z   repository: SpanFabric/host
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6907659Z   token: ***
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6907881Z   ssh-strict: true
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6908112Z   ssh-user: git
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6908347Z   persist-credentials: true
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6908606Z   clean: true
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6908839Z   sparse-checkout-cone-mode: true
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6909119Z   fetch-tags: false
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6909356Z   show-progress: true
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6909866Z   lfs: false
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6910085Z   submodules: false
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6910330Z   set-safe-directory: true
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.6910694Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.7879825Z Syncing repository: SpanFabric/host
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.7881131Z ##[group]Getting Git version info
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.7881644Z Working directory is 'D:\a\host\host'
+windows-trusted-runner	Checkout	2026-10-22T11:59:01.8313167Z [command]"C:\Program Files\Git\bin\git.exe" version
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1077020Z git version 2.56.0.windows.2
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1111894Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1125533Z Temporarily overriding HOME='D:\a\_temp\96650279-fc93-4fe5-968d-3afa1bfdcfdf' before making global git config changes
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1127250Z Adding repository directory to the temporary git global config as a safe directory
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1132313Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\host\host
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1691682Z Deleting the contents of 'D:\a\host\host'
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1698779Z ##[group]Initializing the repository
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.1704345Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\host\host
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.2450978Z Initialized empty Git repository in D:/a/host/host/.git/
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.2495223Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/SpanFabric/host
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.3112383Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.3115923Z ##[group]Disabling automatic garbage collection
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.3117441Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.3387175Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.3388225Z ##[group]Setting up auth
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.3395951Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+windows-trusted-runner	Checkout	2026-10-22T11:59:02.3665231Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+windows-trusted-runner	Checkout	2026-10-22T11:59:03.5455706Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+windows-trusted-runner	Checkout	2026-10-22T11:59:03.5730974Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+windows-trusted-runner	Checkout	2026-10-22T11:59:03.9600201Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+windows-trusted-runner	Checkout	2026-10-22T11:59:03.9859064Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:03.9859592Z ##[group]Fetching the repository
+windows-trusted-runner	Checkout	2026-10-22T11:59:03.9867418Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +5fcd43444500c881f3255e2550fb1927ecbe0f0b:refs/remotes/pull/4/merge
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0148351Z From https://github.com/SpanFabric/host
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0149104Z  * [new branch]      codex/bootstrap-verification-bridge      -> origin/codex/bootstrap-verification-bridge
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0149587Z  * [new branch]      fix/verification-gate-first-push-20261016 -> origin/fix/verification-gate-first-push-20261016
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0150094Z  * [new branch]      main                                     -> origin/main
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0152279Z  * [new branch]      verification/persist-merge-state-20261004 -> origin/verification/persist-merge-state-20261004
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0152917Z  * [new branch]      verification/persist-merge-state-20261016 -> origin/verification/persist-merge-state-20261016
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0153560Z  * [new ref]         5fcd43444500c881f3255e2550fb1927ecbe0f0b -> pull/4/merge
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0179136Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0179647Z ##[group]Determining the checkout info
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0180126Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0187260Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0576288Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0839990Z ##[group]Checking out the ref
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.0846526Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/4/merge
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1340014Z Note: switching to 'refs/remotes/pull/4/merge'.
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1340285Z 
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1340485Z You are in 'detached HEAD' state. You can look around, make experimental
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1340895Z changes and commit them, and you can discard any commits you make in this
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1341298Z state without impacting any branches by switching back to a branch.
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1341535Z 
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1341685Z If you want to create a new branch to retain commits you create, you may
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342037Z do so (now or later) by using -c with the switch command. Example:
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342316Z 
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342437Z   git switch -c <new-branch-name>
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342589Z 
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342681Z Or undo this operation with:
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342819Z 
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342887Z   git switch -
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1342986Z 
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1343165Z Turn off this advice by setting config variable advice.detachedHead to false
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1344500Z 
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1347163Z HEAD is now at 5fcd434 Merge ae7af99cb160d94bb20c9a364441776f01b693e0 into 2882a0c8956b7df2baa446d5b3e844643b2e1f8a
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1434997Z ##[endgroup]
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.1791850Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+windows-trusted-runner	Checkout	2026-10-22T11:59:05.2031779Z 5fcd43444500c881f3255e2550fb1927ecbe0f0b
+windows-trusted-runner	Locate Git Bash	﻿2026-10-22T11:59:05.2338544Z ##[group]Run $candidates = @('C:\Program Files\Git\bin\bash.exe', 'C:\Program Files\Git\usr\bin\bash.exe')
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2339038Z ^[[36;1m$candidates = @('C:\Program Files\Git\bin\bash.exe', 'C:\Program Files\Git\usr\bin\bash.exe')^[[0m
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2339451Z ^[[36;1m$selected = $candidates | Where-Object { Test-Path -LiteralPath $_ -PathType Leaf } | Select-Object -First 1^[[0m
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2339848Z ^[[36;1mif (-not $selected) { throw 'Git Bash is required for the Windows trusted-runner contract.' }^[[0m
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2340213Z ^[[36;1m"SPAN_GPU_GIT_BASH=$selected" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append^[[0m
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2340552Z ^[[36;1mWrite-Host "WINDOWS_GIT_BASH_PATH=$selected"^[[0m
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2340741Z ^[[36;1m& $selected --version^[[0m
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2340909Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2991671Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.2991912Z ##[endgroup]
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.5947580Z WINDOWS_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.6908697Z GNU bash, version 5.3.15(2)-release (x86_64-pc-cygwin)
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.6908985Z Copyright (C) 2025 Free Software Foundation, Inc.
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.6909296Z License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.6909553Z 
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.6909652Z This is free software; you are free to change and redistribute it.
+windows-trusted-runner	Locate Git Bash	2026-10-22T11:59:05.6909873Z There is NO WARRANTY, to the extent permitted by law.
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	﻿2026-10-22T11:59:05.7440484Z ##[group]Run $command = @'
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7440755Z ^[[36;1m$command = @'^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7440889Z ^[[36;1mset -euo pipefail^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7441055Z ^[[36;1mrepo_root="$(cygpath -u "$GITHUB_WORKSPACE")"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7441250Z ^[[36;1mrunner_temp="$(cygpath -u "$RUNNER_TEMP")"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7441417Z ^[[36;1mtest -d "$repo_root"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7441553Z ^[[36;1mtest -d "$runner_temp"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7441766Z ^[[36;1mtrusted_dir="$(mktemp -d "$runner_temp/spangpu-trusted-runner.XXXXXX")"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7442000Z ^[[36;1mtrap 'rm -rf "$trusted_dir"' EXIT^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7442204Z ^[[36;1mtrusted_runner="$trusted_dir/trusted_verify_review_state.sh"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7442511Z ^[[36;1mgit -C "$repo_root" cat-file blob HEAD:scripts/trusted_verify_review_state.sh > "$trusted_runner"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7442784Z ^[[36;1mchmod 700 "$trusted_runner"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7442930Z ^[[36;1mtest -f "$trusted_runner"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7443142Z ^[[36;1mprintf 'WINDOWS_GIT_BASH_PATH=%s\\n' "$SPAN_GPU_GIT_BASH"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7443371Z ^[[36;1mprintf 'WINDOWS_REPO_ROOT_POSIX=%s\\n' "$repo_root"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7443607Z ^[[36;1mprintf 'WINDOWS_TRUSTED_RUNNER_POSIX_PATH=%s\\n' "$trusted_runner"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7443887Z ^[[36;1mif "$trusted_runner" --repo-root "$repo_root" --base "$BASE_SHA"; then^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7444119Z ^[[36;1m  printf 'WINDOWS_TRUSTED_RUNNER_EXIT=0\\n'^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7444278Z ^[[36;1melse^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7444384Z ^[[36;1m  status=$?^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7444542Z ^[[36;1m  printf 'WINDOWS_TRUSTED_RUNNER_EXIT=%s\\n' "$status" >&2^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7444730Z ^[[36;1m  exit "$status"^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7444846Z ^[[36;1mfi^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7444941Z ^[[36;1m'@^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7445106Z ^[[36;1m& $env:SPAN_GPU_GIT_BASH --noprofile --norc -lc $command^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7445318Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7495326Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7495548Z env:
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7495688Z   SPAN_GPU_GIT_BASH: C:\Program Files\Git\bin\bash.exe
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7495879Z   BASE_SHA: 2882a0c8956b7df2baa446d5b3e844643b2e1f8a
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:05.7496041Z ##[endgroup]
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:06.1289311Z WINDOWS_GIT_BASH_PATH=C:\Program Files\Git\bin\bash.exe
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:06.1289751Z WINDOWS_REPO_ROOT_POSIX=/d/a/host/host
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:06.1290052Z WINDOWS_TRUSTED_RUNNER_POSIX_PATH=/d/a/_temp/spangpu-trusted-runner.jNAqkT/trusted_verify_review_state.sh
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:08.6550615Z REVIEW_SUBJECT_SHA256=9b7e7a40a04c2293ab454d408854cf9ff82051ad3e02f47fed5b8e0dc94a45ad
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:08.6550952Z MATERIAL_FILE_COUNT=12
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:08.6744483Z TRUSTED_RUNNER_GIT_OBJECT=7309dc1e1d484188d7c7cb3c6cabd92cf4cfd4ac
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:08.6745987Z TRUSTED_VALIDATOR_GIT_OBJECT=b27c926dfa0a023754e3bf7a531628d1caef21ad
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:08.6746438Z TRUSTED_VALIDATOR_COPY_OBJECT=b27c926dfa0a023754e3bf7a531628d1caef21ad
+windows-trusted-runner	Materialize and execute trusted runner with Git Bash	2026-10-22T11:59:08.6938315Z WINDOWS_TRUSTED_RUNNER_EXIT=0
+windows-trusted-runner	Run verification suite natively on Windows	﻿2026-10-22T11:59:08.7971909Z ##[group]Run python -m unittest discover -s tests/verification -p 'test_*.py' -v
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:08.7972306Z ^[[36;1mpython -m unittest discover -s tests/verification -p 'test_*.py' -v^[[0m
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:08.7972673Z ^[[36;1mif ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }^[[0m
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:08.7972916Z ^[[36;1mWrite-Host 'WINDOWS_VERIFICATION_TESTS=PASS'^[[0m
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:08.8021977Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:08.8022182Z env:
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:08.8022322Z   SPAN_GPU_GIT_BASH: C:\Program Files\Git\bin\bash.exe
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:08.8022489Z ##[endgroup]
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:13.0071544Z test_accepted_root_cannot_replace_real_bootstrap (test_lifecycle_history.LifecycleHistoryTests.test_accepted_root_cannot_replace_real_bootstrap) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:17.3204124Z test_ancestor_parent_adoption_preserves_validated_chain (test_lifecycle_history.LifecycleHistoryTests.test_ancestor_parent_adoption_preserves_validated_chain) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:21.8771726Z test_divergent_merge_fails_closed_even_with_same_state (test_lifecycle_history.LifecycleHistoryTests.test_divergent_merge_fails_closed_even_with_same_state) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:25.6300102Z test_duplicate_historical_json_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_duplicate_historical_json_is_rejected) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T11:59:28.8008963Z test_grafted_history_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_grafted_history_is_rejected) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:07.3563879Z test_hidden_wrong_role_reopens_fail_direct_and_trusted (test_lifecycle_history.LifecycleHistoryTests.test_hidden_wrong_role_reopens_fail_direct_and_trusted) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:12.5243536Z test_later_policy_grant_cannot_retroactively_legalize (test_lifecycle_history.LifecycleHistoryTests.test_later_policy_grant_cannot_retroactively_legalize) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:17.4913243Z test_merge_cannot_erase_invalid_parent_history (test_lifecycle_history.LifecycleHistoryTests.test_merge_cannot_erase_invalid_parent_history) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:20.9849565Z test_merge_cannot_introduce_an_unattributed_state (test_lifecycle_history.LifecycleHistoryTests.test_merge_cannot_introduce_an_unattributed_state) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:29.5354663Z test_merged_post_merge_and_failure_recovery_histories (test_lifecycle_history.LifecycleHistoryTests.test_merged_post_merge_and_failure_recovery_histories) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:34.1835489Z test_missing_historical_state_is_not_an_empty_history (test_lifecycle_history.LifecycleHistoryTests.test_missing_historical_state_is_not_an_empty_history) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:37.5031546Z test_missing_required_parent_object_fails_closed (test_lifecycle_history.LifecycleHistoryTests.test_missing_required_parent_object_fails_closed) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:41.1473454Z test_nonregular_historical_state_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_nonregular_historical_state_is_rejected) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:46.1714203Z test_normal_accepted_reopen_and_irp (test_lifecycle_history.LifecycleHistoryTests.test_normal_accepted_reopen_and_irp) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:49.5827314Z test_octopus_adoption_fails_closed (test_lifecycle_history.LifecycleHistoryTests.test_octopus_adoption_fails_closed) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:53.4079768Z test_policy_cannot_widen_role_graph_or_change_history_version (test_lifecycle_history.LifecycleHistoryTests.test_policy_cannot_widen_role_graph_or_change_history_version) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:00:59.2553524Z test_policy_grant_is_atomic_and_revocation_not_retroactive (test_lifecycle_history.LifecycleHistoryTests.test_policy_grant_is_atomic_and_revocation_not_retroactive) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:04.2960144Z test_replace_refs_do_not_hide_original_invalid_commit (test_lifecycle_history.LifecycleHistoryTests.test_replace_refs_do_not_hide_original_invalid_commit) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:08.6237073Z test_root_planned_bootstrap_and_nonroot_null_base (test_lifecycle_history.LifecycleHistoryTests.test_root_planned_bootstrap_and_nonroot_null_base) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:11.6803447Z test_shallow_history_fails_even_without_base (test_lifecycle_history.LifecycleHistoryTests.test_shallow_history_fails_even_without_base) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:17.1967098Z test_skipped_commits_cannot_hide_invalid_transition (test_lifecycle_history.LifecycleHistoryTests.test_skipped_commits_cannot_hide_invalid_transition) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:20.7844403Z test_unknown_historical_version_cannot_be_hidden (test_lifecycle_history.LifecycleHistoryTests.test_unknown_historical_version_cannot_be_hidden) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:24.4195198Z test_unknown_history_contract_cannot_be_hidden (test_lifecycle_history.LifecycleHistoryTests.test_unknown_history_contract_cannot_be_hidden) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:28.8958433Z test_unreachable_live_state_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_unreachable_live_state_is_rejected) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:31.9902734Z test_accepted_material_reopen_invalidates_previous_acceptance (test_verify_review_state.BridgeTests.test_accepted_material_reopen_invalidates_previous_acceptance) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:37.6707106Z test_accepted_reopen_does_not_grant_builder_upward_authority (test_verify_review_state.BridgeTests.test_accepted_reopen_does_not_grant_builder_upward_authority) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:40.5934108Z test_accepted_reopen_rejects_every_nonbuilder_authority (test_verify_review_state.BridgeTests.test_accepted_reopen_rejects_every_nonbuilder_authority) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:41.4432794Z test_all_zero_base_fails_closed_on_an_ordinary_child_via_cli (test_verify_review_state.BridgeTests.test_all_zero_base_fails_closed_on_an_ordinary_child_via_cli) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:42.8913837Z test_builder_cannot_claim_breaker_or_owner (test_verify_review_state.BridgeTests.test_builder_cannot_claim_breaker_or_owner) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:46.4374035Z test_closed_producer_role_type_matrix_rejects_impersonation (test_verify_review_state.BridgeTests.test_closed_producer_role_type_matrix_rejects_impersonation) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:47.1713691Z test_conflict_markers_rejected (test_verify_review_state.BridgeTests.test_conflict_markers_rejected) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:48.4311814Z test_empty_and_whitespace_base_fail_closed_via_real_cli (test_verify_review_state.BridgeTests.test_empty_and_whitespace_base_fail_closed_via_real_cli) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:49.2126790Z test_exclusion_lookalikes_are_material (test_verify_review_state.BridgeTests.test_exclusion_lookalikes_are_material) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:51.6085141Z test_initial_baseline_self_token_is_root_builder_evidence_only (test_verify_review_state.BridgeTests.test_initial_baseline_self_token_is_root_builder_evidence_only) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:52.5049398Z test_invalid_transition_rejected (test_verify_review_state.BridgeTests.test_invalid_transition_rejected) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:52.8896744Z test_literal_backslash_metadata_lookalikes_fail_closed (test_verify_review_state.BridgeTests.test_literal_backslash_metadata_lookalikes_fail_closed) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:56.5056909Z test_material_change_reopens_ready_state_and_requires_new_breaker (test_verify_review_state.BridgeTests.test_material_change_reopens_ready_state_and_requires_new_breaker) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:01:59.4090193Z test_material_changes_change_digest (test_verify_review_state.BridgeTests.test_material_changes_change_digest) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:05.9084613Z test_merge_and_post_merge_states_require_sha_bound_evidence (test_verify_review_state.BridgeTests.test_merge_and_post_merge_states_require_sha_bound_evidence) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:06.2051559Z test_non_windows_bash_selection_retains_path_behavior (test_verify_review_state.BridgeTests.test_non_windows_bash_selection_retains_path_behavior) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:06.5649063Z test_omitted_base_is_not_an_authoritative_check (test_verify_review_state.BridgeTests.test_omitted_base_is_not_an_authoritative_check) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:07.5393169Z test_pass_file_alone_has_no_authority (test_verify_review_state.BridgeTests.test_pass_file_alone_has_no_authority) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:09.3561012Z test_prior_breaker_cannot_authorize_new_material_digest (test_verify_review_state.BridgeTests.test_prior_breaker_cannot_authorize_new_material_digest) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:11.3329893Z test_prior_owner_cannot_accept_new_material_digest (test_verify_review_state.BridgeTests.test_prior_owner_cannot_accept_new_material_digest) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:13.1579055Z test_repeated_validation_idempotent (test_verify_review_state.BridgeTests.test_repeated_validation_idempotent) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:13.8311516Z test_same_tree_same_digest (test_verify_review_state.BridgeTests.test_same_tree_same_digest) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:14.6524558Z test_shallow_history_fails_closed_via_cli (test_verify_review_state.BridgeTests.test_shallow_history_fails_closed_via_cli) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:15.2032272Z test_stale_breaker_digest_rejected (test_verify_review_state.BridgeTests.test_stale_breaker_digest_rejected) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:15.9288745Z test_state_and_reports_do_not_change_digest (test_verify_review_state.BridgeTests.test_state_and_reports_do_not_change_digest) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:16.7866637Z test_symlink_target_changes_digest_without_symlink_privilege (test_verify_review_state.BridgeTests.test_symlink_target_changes_digest_without_symlink_privilege) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:18.6894176Z test_trusted_runner_allows_only_state_and_report_deltas_then_validates_state (test_verify_review_state.BridgeTests.test_trusted_runner_allows_only_state_and_report_deltas_then_validates_state) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:20.0365119Z test_trusted_runner_clean_checkout_executes_head_validator_and_proves_object_identity (test_verify_review_state.BridgeTests.test_trusted_runner_clean_checkout_executes_head_validator_and_proves_object_identity) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:21.1572386Z test_trusted_runner_preserves_explicit_empty_base_to_validator (test_verify_review_state.BridgeTests.test_trusted_runner_preserves_explicit_empty_base_to_validator) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:22.3832395Z test_trusted_runner_rejects_all_required_material_control_deltas (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_all_required_material_control_deltas) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:23.1479758Z test_trusted_runner_rejects_exclusion_lookalike_and_untracked_import_shadow (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_exclusion_lookalike_and_untracked_import_shadow) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:23.6541642Z test_trusted_runner_rejects_mutable_worktree_wrapper_without_executing_it (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_mutable_worktree_wrapper_without_executing_it) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:24.1428115Z test_trusted_runner_rejects_replaced_validator_before_it_can_exit_zero (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_replaced_validator_before_it_can_exit_zero) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:24.6280381Z test_trusted_runner_rejects_replaced_validator_before_sentinel_side_effect (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_replaced_validator_before_sentinel_side_effect) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:25.4396494Z test_unknown_base_fails_closed_via_cli (test_verify_review_state.BridgeTests.test_unknown_base_fails_closed_via_cli) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:26.4820282Z test_unrelated_base_fails_closed_via_cli (test_verify_review_state.BridgeTests.test_unrelated_base_fails_closed_via_cli) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:27.9138616Z test_valid_ancestor_passes_normal_state_and_risk_rules_via_cli (test_verify_review_state.BridgeTests.test_valid_ancestor_passes_normal_state_and_risk_rules_via_cli) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:30.1928234Z test_valid_base_and_tightly_scoped_null_bootstrap_via_cli (test_verify_review_state.BridgeTests.test_valid_base_and_tightly_scoped_null_bootstrap_via_cli) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:31.6646759Z test_valid_builder_and_ci_evidence_remain_nonindependent_technical_evidence (test_verify_review_state.BridgeTests.test_valid_builder_and_ci_evidence_remain_nonindependent_technical_evidence) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:31.9508864Z test_windows_bash_prefers_git_bin_before_path (test_verify_review_state.BridgeTests.test_windows_bash_prefers_git_bin_before_path) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:32.2392044Z test_windows_bash_rejects_arbitrary_path_host (test_verify_review_state.BridgeTests.test_windows_bash_rejects_arbitrary_path_host) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:32.5665404Z test_windows_bash_rejects_historical_wsl_launcher_when_git_bash_exists (test_verify_review_state.BridgeTests.test_windows_bash_rejects_historical_wsl_launcher_when_git_bash_exists) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:32.8682498Z test_windows_bash_rejects_when_no_candidate_is_suitable (test_verify_review_state.BridgeTests.test_windows_bash_rejects_when_no_candidate_is_suitable) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.1507882Z test_windows_bash_uses_usr_bin_when_bin_is_absent (test_verify_review_state.BridgeTests.test_windows_bash_uses_usr_bin_when_bin_is_absent) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.4317009Z test_windows_trusted_runner_prefers_git_bash_over_path_shim (test_verify_review_state.BridgeTests.test_windows_trusted_runner_prefers_git_bash_over_path_shim) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.7298547Z test_workflows_fetch_full_history_for_evidence_commits (test_verify_review_state.BridgeTests.test_workflows_fetch_full_history_for_evidence_commits) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.7638745Z test_apostrophe_native_conversion_is_lossless (test_windows_boundary.WindowsBoundaryTests.test_apostrophe_native_conversion_is_lossless) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.7641081Z test_fixed_git_order_and_non_windows_path (test_windows_boundary.WindowsBoundaryTests.test_fixed_git_order_and_non_windows_path) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.7641833Z test_fixed_hosts_prevent_path_lookup_and_probe (test_windows_boundary.WindowsBoundaryTests.test_fixed_hosts_prevent_path_lookup_and_probe) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.7642823Z test_invalid_control_characters_fail_cleanly (test_windows_boundary.WindowsBoundaryTests.test_invalid_control_characters_fail_cleanly) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.7644045Z test_known_wsl_is_rejected_even_if_injected_probe_claims_success (test_windows_boundary.WindowsBoundaryTests.test_known_wsl_is_rejected_even_if_injected_probe_claims_success) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.7644776Z test_missing_fallback_is_not_probed (test_windows_boundary.WindowsBoundaryTests.test_missing_fallback_is_not_probed) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:33.8318386Z test_native_conversion_preserves_trailing_space (test_windows_boundary.WindowsBoundaryTests.test_native_conversion_preserves_trailing_space) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:34.8328950Z test_native_path_character_matrix_and_non_injection (test_windows_boundary.WindowsBoundaryTests.test_native_path_character_matrix_and_non_injection) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:34.8329996Z test_non_windows_path_does_not_probe_native_suitability (test_windows_boundary.WindowsBoundaryTests.test_non_windows_path_does_not_probe_native_suitability) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:34.8332508Z test_positive_path_fallback_and_failed_suitability (test_windows_boundary.WindowsBoundaryTests.test_positive_path_fallback_and_failed_suitability) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:34.8351273Z test_probe_is_static_bounded_and_isolates_startup_and_git_environment (test_windows_boundary.WindowsBoundaryTests.test_probe_is_static_bounded_and_isolates_startup_and_git_environment) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:34.8421011Z test_probe_requires_success_and_exact_complete_marker (test_windows_boundary.WindowsBoundaryTests.test_probe_requires_success_and_exact_complete_marker) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:34.8425974Z test_probe_start_failure_and_timeout_fail_closed (test_windows_boundary.WindowsBoundaryTests.test_probe_start_failure_and_timeout_fail_closed) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:34.8426740Z test_real_non_windows_bash_fails_native_suitability (test_windows_boundary.WindowsBoundaryTests.test_real_non_windows_bash_fails_native_suitability) ... skipped 'native Linux/Unix rejection is exercised on non-Windows CI'
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.1304639Z test_real_nonstandard_git_path_fallback_passes_positive_probe (test_windows_boundary.WindowsBoundaryTests.test_real_nonstandard_git_path_fallback_passes_positive_probe) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.1404979Z test_real_unrelated_executable_cannot_qualify_as_bash (test_windows_boundary.WindowsBoundaryTests.test_real_unrelated_executable_cannot_qualify_as_bash) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.1408526Z test_windows_never_looks_up_path_before_host_selection (test_windows_boundary.WindowsBoundaryTests.test_windows_never_looks_up_path_before_host_selection) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.1417531Z test_windows_path_discovery_only_after_both_fixed_hosts_absent (test_windows_boundary.WindowsBoundaryTests.test_windows_path_discovery_only_after_both_fixed_hosts_absent) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.1425620Z test_workflow_contract_rejects_skipping_or_tolerating_assertion (test_windows_boundary.WindowsBoundaryTests.test_workflow_contract_rejects_skipping_or_tolerating_assertion) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3498389Z test_workflow_prerequisite_result_matrix (test_windows_boundary.WindowsBoundaryTests.test_workflow_prerequisite_result_matrix) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3502971Z test_workflow_success_keeps_immutable_runner_and_tests (test_windows_boundary.WindowsBoundaryTests.test_workflow_success_keeps_immutable_runner_and_tests) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3504860Z test_wsl_and_arbitrary_path_hosts_rejected_without_fixed_git (test_windows_boundary.WindowsBoundaryTests.test_wsl_and_arbitrary_path_hosts_rejected_without_fixed_git) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3508975Z test_contract_rejects_broad_missing_or_filtered_events (test_windows_boundary.WorkflowTriggerTests.test_contract_rejects_broad_missing_or_filtered_events) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3511385Z test_integrity_event_boundary_matches_verification_gate (test_windows_boundary.WorkflowTriggerTests.test_integrity_event_boundary_matches_verification_gate) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3512688Z test_pr_heads_and_main_push_are_in_scope_feature_first_push_is_not (test_windows_boundary.WorkflowTriggerTests.test_pr_heads_and_main_push_are_in_scope_feature_first_push_is_not) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3517167Z test_required_context_and_original_base_sources_are_preserved (test_windows_boundary.WorkflowTriggerTests.test_required_context_and_original_base_sources_are_preserved) ... ok
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3517722Z 
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3517872Z ----------------------------------------------------------------------
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3518185Z Ran 96 tests in 207.689s
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3518307Z 
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.3518723Z OK (skipped=1)
+windows-trusted-runner	Run verification suite natively on Windows	2026-10-22T12:02:37.4200012Z WINDOWS_VERIFICATION_TESTS=PASS
+windows-trusted-runner	Post Checkout	﻿2026-10-22T12:02:37.4631760Z Post job cleanup.
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:37.5685491Z [command]"C:\Program Files\Git\bin\git.exe" version
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:37.5942782Z git version 2.56.0.windows.2
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:37.5986855Z Temporarily overriding HOME='D:\a\_temp\e8ef39a3-3172-4788-a708-d603ac841168' before making global git config changes
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:37.5987524Z Adding repository directory to the temporary git global config as a safe directory
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:37.5993590Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\host\host
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:37.6251766Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:37.6507079Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:38.0399060Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:38.0633931Z http.https://github.com/.extraheader
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:38.0664700Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+windows-trusted-runner	Post Checkout	2026-10-22T12:02:38.0922931Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+windows-trusted-runner	Complete job	﻿2026-10-22T12:02:38.4996252Z Cleaning up orphan processes
+windows-trusted-runner	Complete job	2026-10-22T12:02:38.5190425Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+verification-gate	Set up job	﻿2026-10-22T12:02:44.1889139Z Current runner version: '2.338.0'
+verification-gate	Set up job	2026-10-22T12:02:44.1928322Z ##[group]Runner Image Provisioner
+verification-gate	Set up job	2026-10-22T12:02:44.1929825Z Hosted Compute Agent
+verification-gate	Set up job	2026-10-22T12:02:44.1930908Z Version: 20261021.618
+verification-gate	Set up job	2026-10-22T12:02:44.1932085Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+verification-gate	Set up job	2026-10-22T12:02:44.1933812Z Build Date: 2026-10-21T00:45:21Z
+verification-gate	Set up job	2026-10-22T12:02:44.1935173Z Worker ID: {e659b94a-071d-4664-9afd-54b0d6136993}
+verification-gate	Set up job	2026-10-22T12:02:44.1936499Z Region: eastus2
+verification-gate	Set up job	2026-10-22T12:02:44.1937688Z Cloud: Azure
+verification-gate	Set up job	2026-10-22T12:02:44.1938711Z ##[endgroup]
+verification-gate	Set up job	2026-10-22T12:02:44.1941406Z ##[group]Operating System
+verification-gate	Set up job	2026-10-22T12:02:44.1942633Z Ubuntu
+verification-gate	Set up job	2026-10-22T12:02:44.1943957Z 26.04.1
+verification-gate	Set up job	2026-10-22T12:02:44.1944984Z LTS
+verification-gate	Set up job	2026-10-22T12:02:44.1945890Z ##[endgroup]
+verification-gate	Set up job	2026-10-22T12:02:44.1946966Z ##[group]Runner Image
+verification-gate	Set up job	2026-10-22T12:02:44.1948154Z Image: ubuntu-26.04
+verification-gate	Set up job	2026-10-22T12:02:44.1949190Z Version: 20261021.171.10
+verification-gate	Set up job	2026-10-22T12:02:44.1951247Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261021.171/images/ubuntu/Ubuntu2604-Readme.md
+verification-gate	Set up job	2026-10-22T12:02:44.1954628Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261021.171
+verification-gate	Set up job	2026-10-22T12:02:44.1956314Z ##[endgroup]
+verification-gate	Set up job	2026-10-22T12:02:44.1958239Z ##[group]GITHUB_TOKEN Permissions
+verification-gate	Set up job	2026-10-22T12:02:44.1961373Z Contents: read
+verification-gate	Set up job	2026-10-22T12:02:44.1962441Z Metadata: read
+verification-gate	Set up job	2026-10-22T12:02:44.1963760Z ##[endgroup]
+verification-gate	Set up job	2026-10-22T12:02:44.1967502Z Secret source: Actions
+verification-gate	Set up job	2026-10-22T12:02:44.1969141Z Cache mode: write
+verification-gate	Set up job	2026-10-22T12:02:44.1970737Z Prepare workflow directory
+verification-gate	Set up job	2026-10-22T12:02:44.2493892Z Prepare all required actions
+verification-gate	Set up job	2026-10-22T12:02:44.2572481Z Getting action download info
+verification-gate	Set up job	2026-10-22T12:02:44.4508118Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+verification-gate	Set up job	2026-10-22T12:02:44.6431156Z Complete job name: verification-gate
+verification-gate	Assert native Windows prerequisite	﻿2026-10-22T12:02:44.7327761Z ##[group]Run set -euo pipefail
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7328461Z ^[[36;1mset -euo pipefail^[[0m
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7329270Z ^[[36;1mprintf 'WINDOWS_TRUSTED_RUNNER_RESULT=%s\n' "$WINDOWS_TRUSTED_RUNNER_RESULT"^[[0m
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7330236Z ^[[36;1mif [[ "$WINDOWS_TRUSTED_RUNNER_RESULT" != 'success' ]]; then^[[0m
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7331141Z ^[[36;1m  printf 'Native Windows validation did not succeed.\n' >&2^[[0m
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7331834Z ^[[36;1m  exit 1^[[0m
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7332256Z ^[[36;1mfi^[[0m
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7366380Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7367452Z env:
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7367938Z   WINDOWS_TRUSTED_RUNNER_RESULT: success
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7368505Z ##[endgroup]
+verification-gate	Assert native Windows prerequisite	2026-10-22T12:02:44.7529244Z WINDOWS_TRUSTED_RUNNER_RESULT=success
+verification-gate	Checkout	﻿2026-10-22T12:02:44.7770505Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+verification-gate	Checkout	2026-10-22T12:02:44.7771327Z with:
+verification-gate	Checkout	2026-10-22T12:02:44.7771748Z   fetch-depth: 0
+verification-gate	Checkout	2026-10-22T12:02:44.7772217Z   repository: SpanFabric/host
+verification-gate	Checkout	2026-10-22T12:02:44.7776659Z   token: ***
+verification-gate	Checkout	2026-10-22T12:02:44.7777119Z   ssh-strict: true
+verification-gate	Checkout	2026-10-22T12:02:44.7777577Z   ssh-user: git
+verification-gate	Checkout	2026-10-22T12:02:44.7778023Z   persist-credentials: true
+verification-gate	Checkout	2026-10-22T12:02:44.7778519Z   clean: true
+verification-gate	Checkout	2026-10-22T12:02:44.7778972Z   sparse-checkout-cone-mode: true
+verification-gate	Checkout	2026-10-22T12:02:44.7779501Z   fetch-tags: false
+verification-gate	Checkout	2026-10-22T12:02:44.7779947Z   show-progress: true
+verification-gate	Checkout	2026-10-22T12:02:44.7780390Z   lfs: false
+verification-gate	Checkout	2026-10-22T12:02:44.7780804Z   submodules: false
+verification-gate	Checkout	2026-10-22T12:02:44.7781250Z   set-safe-directory: true
+verification-gate	Checkout	2026-10-22T12:02:44.7781732Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:44.8869045Z Syncing repository: SpanFabric/host
+verification-gate	Checkout	2026-10-22T12:02:44.8872002Z ##[group]Getting Git version info
+verification-gate	Checkout	2026-10-22T12:02:44.8873530Z Working directory is '/home/runner/work/host/host'
+verification-gate	Checkout	2026-10-22T12:02:44.8875290Z [command]/usr/bin/git version
+verification-gate	Checkout	2026-10-22T12:02:44.8887657Z git version 2.55.0
+verification-gate	Checkout	2026-10-22T12:02:44.8914196Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:44.8932275Z Temporarily overriding HOME='/home/runner/work/_temp/19f1c829-12f6-4d3e-b413-2b937d3d25e5' before making global git config changes
+verification-gate	Checkout	2026-10-22T12:02:44.8935250Z Adding repository directory to the temporary git global config as a safe directory
+verification-gate	Checkout	2026-10-22T12:02:44.8938000Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/host/host
+verification-gate	Checkout	2026-10-22T12:02:44.9009428Z Deleting the contents of '/home/runner/work/host/host'
+verification-gate	Checkout	2026-10-22T12:02:44.9020124Z ##[group]Initializing the repository
+verification-gate	Checkout	2026-10-22T12:02:44.9036757Z [command]/usr/bin/git init /home/runner/work/host/host
+verification-gate	Checkout	2026-10-22T12:02:44.9169293Z hint: Using 'master' as the name for the initial branch. This default branch name
+verification-gate	Checkout	2026-10-22T12:02:44.9171438Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verification-gate	Checkout	2026-10-22T12:02:44.9173983Z hint: to use in all of your new repositories, which will suppress this warning,
+verification-gate	Checkout	2026-10-22T12:02:44.9176312Z hint: call:
+verification-gate	Checkout	2026-10-22T12:02:44.9177436Z hint:
+verification-gate	Checkout	2026-10-22T12:02:44.9178823Z hint: 	git config --global init.defaultBranch <name>
+verification-gate	Checkout	2026-10-22T12:02:44.9180264Z hint:
+verification-gate	Checkout	2026-10-22T12:02:44.9181550Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verification-gate	Checkout	2026-10-22T12:02:44.9183824Z hint: 'development'. The just-created branch can be renamed via this command:
+verification-gate	Checkout	2026-10-22T12:02:44.9186628Z hint:
+verification-gate	Checkout	2026-10-22T12:02:44.9187711Z hint: 	git branch -m <name>
+verification-gate	Checkout	2026-10-22T12:02:44.9188774Z hint:
+verification-gate	Checkout	2026-10-22T12:02:44.9190055Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verification-gate	Checkout	2026-10-22T12:02:44.9192042Z Initialized empty Git repository in /home/runner/work/host/host/.git/
+verification-gate	Checkout	2026-10-22T12:02:44.9196142Z [command]/usr/bin/git remote add origin https://github.com/SpanFabric/host
+verification-gate	Checkout	2026-10-22T12:02:44.9247683Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:44.9248983Z ##[group]Disabling automatic garbage collection
+verification-gate	Checkout	2026-10-22T12:02:44.9252182Z [command]/usr/bin/git config --local gc.auto 0
+verification-gate	Checkout	2026-10-22T12:02:44.9290491Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:44.9291746Z ##[group]Setting up auth
+verification-gate	Checkout	2026-10-22T12:02:44.9298549Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verification-gate	Checkout	2026-10-22T12:02:44.9339398Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verification-gate	Checkout	2026-10-22T12:02:44.9844607Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verification-gate	Checkout	2026-10-22T12:02:44.9882514Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verification-gate	Checkout	2026-10-22T12:02:45.0174406Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verification-gate	Checkout	2026-10-22T12:02:45.0220162Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:45.0221110Z ##[group]Fetching the repository
+verification-gate	Checkout	2026-10-22T12:02:45.0231137Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +5fcd43444500c881f3255e2550fb1927ecbe0f0b:refs/remotes/pull/4/merge
+verification-gate	Checkout	2026-10-22T12:02:45.3282016Z From https://github.com/SpanFabric/host
+verification-gate	Checkout	2026-10-22T12:02:45.3284796Z  * [new branch]      codex/bootstrap-verification-bridge      -> origin/codex/bootstrap-verification-bridge
+verification-gate	Checkout	2026-10-22T12:02:45.3287670Z  * [new branch]      fix/verification-gate-first-push-20261016 -> origin/fix/verification-gate-first-push-20261016
+verification-gate	Checkout	2026-10-22T12:02:45.3290176Z  * [new branch]      main                                     -> origin/main
+verification-gate	Checkout	2026-10-22T12:02:45.3293071Z  * [new branch]      verification/persist-merge-state-20261004 -> origin/verification/persist-merge-state-20261004
+verification-gate	Checkout	2026-10-22T12:02:45.3296314Z  * [new branch]      verification/persist-merge-state-20261016 -> origin/verification/persist-merge-state-20261016
+verification-gate	Checkout	2026-10-22T12:02:45.3298976Z  * [new ref]         5fcd43444500c881f3255e2550fb1927ecbe0f0b -> pull/4/merge
+verification-gate	Checkout	2026-10-22T12:02:45.3302533Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:45.3304340Z ##[group]Determining the checkout info
+verification-gate	Checkout	2026-10-22T12:02:45.3305435Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:45.3306555Z [command]/usr/bin/git sparse-checkout disable
+verification-gate	Checkout	2026-10-22T12:02:45.3366008Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verification-gate	Checkout	2026-10-22T12:02:45.3398871Z ##[group]Checking out the ref
+verification-gate	Checkout	2026-10-22T12:02:45.3403605Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/4/merge
+verification-gate	Checkout	2026-10-22T12:02:45.3472918Z Note: switching to 'refs/remotes/pull/4/merge'.
+verification-gate	Checkout	2026-10-22T12:02:45.3473768Z 
+verification-gate	Checkout	2026-10-22T12:02:45.3474310Z You are in 'detached HEAD' state. You can look around, make experimental
+verification-gate	Checkout	2026-10-22T12:02:45.3475528Z changes and commit them, and you can discard any commits you make in this
+verification-gate	Checkout	2026-10-22T12:02:45.3476791Z state without impacting any branches by switching back to a branch.
+verification-gate	Checkout	2026-10-22T12:02:45.3478058Z 
+verification-gate	Checkout	2026-10-22T12:02:45.3478976Z If you want to create a new branch to retain commits you create, you may
+verification-gate	Checkout	2026-10-22T12:02:45.3480878Z do so (now or later) by using -c with the switch command. Example:
+verification-gate	Checkout	2026-10-22T12:02:45.3482062Z 
+verification-gate	Checkout	2026-10-22T12:02:45.3482997Z   git switch -c <new-branch-name>
+verification-gate	Checkout	2026-10-22T12:02:45.3483883Z 
+verification-gate	Checkout	2026-10-22T12:02:45.3484355Z Or undo this operation with:
+verification-gate	Checkout	2026-10-22T12:02:45.3485049Z 
+verification-gate	Checkout	2026-10-22T12:02:45.3485496Z   git switch -
+verification-gate	Checkout	2026-10-22T12:02:45.3486053Z 
+verification-gate	Checkout	2026-10-22T12:02:45.3486959Z Turn off this advice by setting config variable advice.detachedHead to false
+verification-gate	Checkout	2026-10-22T12:02:45.3488287Z 
+verification-gate	Checkout	2026-10-22T12:02:45.3489809Z HEAD is now at 5fcd434 Merge ae7af99cb160d94bb20c9a364441776f01b693e0 into 2882a0c8956b7df2baa446d5b3e844643b2e1f8a
+verification-gate	Checkout	2026-10-22T12:02:45.3494401Z ##[endgroup]
+verification-gate	Checkout	2026-10-22T12:02:45.3539910Z [command]/usr/bin/git log -1 --format=%H
+verification-gate	Checkout	2026-10-22T12:02:45.3575125Z 5fcd43444500c881f3255e2550fb1927ecbe0f0b
+verification-gate	Validate Manual Verification Bridge	﻿2026-10-22T12:02:45.3763578Z ##[group]Run set -euo pipefail
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3764436Z ^[[36;1mset -euo pipefail^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3765309Z ^[[36;1mtrusted_dir="$(mktemp -d "${RUNNER_TEMP:-/tmp}/spangpu-trusted-runner.XXXXXX")"^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3766216Z ^[[36;1mtrap 'rm -rf "$trusted_dir"' EXIT^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3767017Z ^[[36;1mtrusted_runner="$trusted_dir/trusted_verify_review_state.sh"^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3768194Z ^[[36;1mgit cat-file blob HEAD:scripts/trusted_verify_review_state.sh > "$trusted_runner"^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3769453Z ^[[36;1mchmod 700 "$trusted_runner"^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3770450Z ^[[36;1m"$trusted_runner" --repo-root "$GITHUB_WORKSPACE" --base "$BASE_SHA"^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3771609Z ^[[36;1mpython -m unittest discover -s tests/verification -p 'test_*.py' -v^[[0m
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3803671Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3804410Z env:
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3804928Z   BASE_SHA: 2882a0c8956b7df2baa446d5b3e844643b2e1f8a
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.3805560Z ##[endgroup]
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.6144476Z REVIEW_SUBJECT_SHA256=9b7e7a40a04c2293ab454d408854cf9ff82051ad3e02f47fed5b8e0dc94a45ad
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.6234428Z MATERIAL_FILE_COUNT=12
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.6245925Z TRUSTED_RUNNER_GIT_OBJECT=7309dc1e1d484188d7c7cb3c6cabd92cf4cfd4ac
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.6248761Z TRUSTED_VALIDATOR_GIT_OBJECT=b27c926dfa0a023754e3bf7a531628d1caef21ad
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:45.6250509Z TRUSTED_VALIDATOR_COPY_OBJECT=b27c926dfa0a023754e3bf7a531628d1caef21ad
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:46.3024046Z test_accepted_root_cannot_replace_real_bootstrap (test_lifecycle_history.LifecycleHistoryTests.test_accepted_root_cannot_replace_real_bootstrap) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:46.8388982Z test_ancestor_parent_adoption_preserves_validated_chain (test_lifecycle_history.LifecycleHistoryTests.test_ancestor_parent_adoption_preserves_validated_chain) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:47.4175749Z test_divergent_merge_fails_closed_even_with_same_state (test_lifecycle_history.LifecycleHistoryTests.test_divergent_merge_fails_closed_even_with_same_state) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:47.8052376Z test_duplicate_historical_json_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_duplicate_historical_json_is_rejected) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:48.1555516Z test_grafted_history_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_grafted_history_is_rejected) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:53.5255360Z test_hidden_wrong_role_reopens_fail_direct_and_trusted (test_lifecycle_history.LifecycleHistoryTests.test_hidden_wrong_role_reopens_fail_direct_and_trusted) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:54.1141644Z test_later_policy_grant_cannot_retroactively_legalize (test_lifecycle_history.LifecycleHistoryTests.test_later_policy_grant_cannot_retroactively_legalize) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:54.6910429Z test_merge_cannot_erase_invalid_parent_history (test_lifecycle_history.LifecycleHistoryTests.test_merge_cannot_erase_invalid_parent_history) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:55.0717207Z test_merge_cannot_introduce_an_unattributed_state (test_lifecycle_history.LifecycleHistoryTests.test_merge_cannot_introduce_an_unattributed_state) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:56.0678272Z test_merged_post_merge_and_failure_recovery_histories (test_lifecycle_history.LifecycleHistoryTests.test_merged_post_merge_and_failure_recovery_histories) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:56.6158819Z test_missing_historical_state_is_not_an_empty_history (test_lifecycle_history.LifecycleHistoryTests.test_missing_historical_state_is_not_an_empty_history) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:56.9723587Z test_missing_required_parent_object_fails_closed (test_lifecycle_history.LifecycleHistoryTests.test_missing_required_parent_object_fails_closed) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:57.3573555Z test_nonregular_historical_state_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_nonregular_historical_state_is_rejected) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:57.9346009Z test_normal_accepted_reopen_and_irp (test_lifecycle_history.LifecycleHistoryTests.test_normal_accepted_reopen_and_irp) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:58.3090512Z test_octopus_adoption_fails_closed (test_lifecycle_history.LifecycleHistoryTests.test_octopus_adoption_fails_closed) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:58.7028805Z test_policy_cannot_widen_role_graph_or_change_history_version (test_lifecycle_history.LifecycleHistoryTests.test_policy_cannot_widen_role_graph_or_change_history_version) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:59.4027844Z test_policy_grant_is_atomic_and_revocation_not_retroactive (test_lifecycle_history.LifecycleHistoryTests.test_policy_grant_is_atomic_and_revocation_not_retroactive) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:02:59.9725719Z test_replace_refs_do_not_hide_original_invalid_commit (test_lifecycle_history.LifecycleHistoryTests.test_replace_refs_do_not_hide_original_invalid_commit) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:00.5692533Z test_root_planned_bootstrap_and_nonroot_null_base (test_lifecycle_history.LifecycleHistoryTests.test_root_planned_bootstrap_and_nonroot_null_base) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:00.9234306Z test_shallow_history_fails_even_without_base (test_lifecycle_history.LifecycleHistoryTests.test_shallow_history_fails_even_without_base) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:01.5553244Z test_skipped_commits_cannot_hide_invalid_transition (test_lifecycle_history.LifecycleHistoryTests.test_skipped_commits_cannot_hide_invalid_transition) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:01.9773232Z test_unknown_historical_version_cannot_be_hidden (test_lifecycle_history.LifecycleHistoryTests.test_unknown_historical_version_cannot_be_hidden) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:02.3777526Z test_unknown_history_contract_cannot_be_hidden (test_lifecycle_history.LifecycleHistoryTests.test_unknown_history_contract_cannot_be_hidden) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:02.9219659Z test_unreachable_live_state_is_rejected (test_lifecycle_history.LifecycleHistoryTests.test_unreachable_live_state_is_rejected) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:03.1527379Z test_accepted_material_reopen_invalidates_previous_acceptance (test_verify_review_state.BridgeTests.test_accepted_material_reopen_invalidates_previous_acceptance) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:03.5480332Z test_accepted_reopen_does_not_grant_builder_upward_authority (test_verify_review_state.BridgeTests.test_accepted_reopen_does_not_grant_builder_upward_authority) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:03.7534546Z test_accepted_reopen_rejects_every_nonbuilder_authority (test_verify_review_state.BridgeTests.test_accepted_reopen_rejects_every_nonbuilder_authority) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:03.8934908Z test_all_zero_base_fails_closed_on_an_ordinary_child_via_cli (test_verify_review_state.BridgeTests.test_all_zero_base_fails_closed_on_an_ordinary_child_via_cli) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.0044027Z test_builder_cannot_claim_breaker_or_owner (test_verify_review_state.BridgeTests.test_builder_cannot_claim_breaker_or_owner) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.2540741Z test_closed_producer_role_type_matrix_rejects_impersonation (test_verify_review_state.BridgeTests.test_closed_producer_role_type_matrix_rejects_impersonation) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.3171813Z test_conflict_markers_rejected (test_verify_review_state.BridgeTests.test_conflict_markers_rejected) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.5427312Z test_empty_and_whitespace_base_fail_closed_via_real_cli (test_verify_review_state.BridgeTests.test_empty_and_whitespace_base_fail_closed_via_real_cli) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.6121057Z test_exclusion_lookalikes_are_material (test_verify_review_state.BridgeTests.test_exclusion_lookalikes_are_material) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.7985202Z test_initial_baseline_self_token_is_root_builder_evidence_only (test_verify_review_state.BridgeTests.test_initial_baseline_self_token_is_root_builder_evidence_only) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.8718747Z test_invalid_transition_rejected (test_verify_review_state.BridgeTests.test_invalid_transition_rejected) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:04.9162488Z test_literal_backslash_metadata_lookalikes_fail_closed (test_verify_review_state.BridgeTests.test_literal_backslash_metadata_lookalikes_fail_closed) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:05.1912180Z test_material_change_reopens_ready_state_and_requires_new_breaker (test_verify_review_state.BridgeTests.test_material_change_reopens_ready_state_and_requires_new_breaker) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:05.3925657Z test_material_changes_change_digest (test_verify_review_state.BridgeTests.test_material_changes_change_digest) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:05.8481685Z test_merge_and_post_merge_states_require_sha_bound_evidence (test_verify_review_state.BridgeTests.test_merge_and_post_merge_states_require_sha_bound_evidence) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:05.8822993Z test_non_windows_bash_selection_retains_path_behavior (test_verify_review_state.BridgeTests.test_non_windows_bash_selection_retains_path_behavior) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:05.9810877Z test_omitted_base_is_not_an_authoritative_check (test_verify_review_state.BridgeTests.test_omitted_base_is_not_an_authoritative_check) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.0577295Z test_pass_file_alone_has_no_authority (test_verify_review_state.BridgeTests.test_pass_file_alone_has_no_authority) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.1981192Z test_prior_breaker_cannot_authorize_new_material_digest (test_verify_review_state.BridgeTests.test_prior_breaker_cannot_authorize_new_material_digest) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.3334595Z test_prior_owner_cannot_accept_new_material_digest (test_verify_review_state.BridgeTests.test_prior_owner_cannot_accept_new_material_digest) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.4661878Z test_repeated_validation_idempotent (test_verify_review_state.BridgeTests.test_repeated_validation_idempotent) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.5252017Z test_same_tree_same_digest (test_verify_review_state.BridgeTests.test_same_tree_same_digest) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.6562939Z test_shallow_history_fails_closed_via_cli (test_verify_review_state.BridgeTests.test_shallow_history_fails_closed_via_cli) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.7108076Z test_stale_breaker_digest_rejected (test_verify_review_state.BridgeTests.test_stale_breaker_digest_rejected) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.7698293Z test_state_and_reports_do_not_change_digest (test_verify_review_state.BridgeTests.test_state_and_reports_do_not_change_digest) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:06.8359311Z test_symlink_target_changes_digest_without_symlink_privilege (test_verify_review_state.BridgeTests.test_symlink_target_changes_digest_without_symlink_privilege) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.1706581Z test_trusted_runner_allows_only_state_and_report_deltas_then_validates_state (test_verify_review_state.BridgeTests.test_trusted_runner_allows_only_state_and_report_deltas_then_validates_state) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.3672329Z test_trusted_runner_clean_checkout_executes_head_validator_and_proves_object_identity (test_verify_review_state.BridgeTests.test_trusted_runner_clean_checkout_executes_head_validator_and_proves_object_identity) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.5461469Z test_trusted_runner_preserves_explicit_empty_base_to_validator (test_verify_review_state.BridgeTests.test_trusted_runner_preserves_explicit_empty_base_to_validator) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.6460992Z test_trusted_runner_rejects_all_required_material_control_deltas (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_all_required_material_control_deltas) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.7177650Z test_trusted_runner_rejects_exclusion_lookalike_and_untracked_import_shadow (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_exclusion_lookalike_and_untracked_import_shadow) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.7647020Z test_trusted_runner_rejects_mutable_worktree_wrapper_without_executing_it (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_mutable_worktree_wrapper_without_executing_it) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.8111070Z test_trusted_runner_rejects_replaced_validator_before_it_can_exit_zero (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_replaced_validator_before_it_can_exit_zero) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.8625508Z test_trusted_runner_rejects_replaced_validator_before_sentinel_side_effect (test_verify_review_state.BridgeTests.test_trusted_runner_rejects_replaced_validator_before_sentinel_side_effect) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:07.9957571Z test_unknown_base_fails_closed_via_cli (test_verify_review_state.BridgeTests.test_unknown_base_fails_closed_via_cli) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.1331245Z test_unrelated_base_fails_closed_via_cli (test_verify_review_state.BridgeTests.test_unrelated_base_fails_closed_via_cli) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.2958511Z test_valid_ancestor_passes_normal_state_and_risk_rules_via_cli (test_verify_review_state.BridgeTests.test_valid_ancestor_passes_normal_state_and_risk_rules_via_cli) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.5671188Z test_valid_base_and_tightly_scoped_null_bootstrap_via_cli (test_verify_review_state.BridgeTests.test_valid_base_and_tightly_scoped_null_bootstrap_via_cli) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.6790746Z test_valid_builder_and_ci_evidence_remain_nonindependent_technical_evidence (test_verify_review_state.BridgeTests.test_valid_builder_and_ci_evidence_remain_nonindependent_technical_evidence) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.7100328Z test_windows_bash_prefers_git_bin_before_path (test_verify_review_state.BridgeTests.test_windows_bash_prefers_git_bin_before_path) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.7417162Z test_windows_bash_rejects_arbitrary_path_host (test_verify_review_state.BridgeTests.test_windows_bash_rejects_arbitrary_path_host) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.7748336Z test_windows_bash_rejects_historical_wsl_launcher_when_git_bash_exists (test_verify_review_state.BridgeTests.test_windows_bash_rejects_historical_wsl_launcher_when_git_bash_exists) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8085594Z test_windows_bash_rejects_when_no_candidate_is_suitable (test_verify_review_state.BridgeTests.test_windows_bash_rejects_when_no_candidate_is_suitable) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8408143Z test_windows_bash_uses_usr_bin_when_bin_is_absent (test_verify_review_state.BridgeTests.test_windows_bash_uses_usr_bin_when_bin_is_absent) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8409773Z test_windows_trusted_runner_prefers_git_bash_over_path_shim (test_verify_review_state.BridgeTests.test_windows_trusted_runner_prefers_git_bash_over_path_shim) ... skipped 'Windows-specific Bash-host selection'
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8731192Z test_workflows_fetch_full_history_for_evidence_commits (test_verify_review_state.BridgeTests.test_workflows_fetch_full_history_for_evidence_commits) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8733862Z test_apostrophe_native_conversion_is_lossless (test_windows_boundary.WindowsBoundaryTests.test_apostrophe_native_conversion_is_lossless) ... skipped 'real native Windows path transport'
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8735236Z test_fixed_git_order_and_non_windows_path (test_windows_boundary.WindowsBoundaryTests.test_fixed_git_order_and_non_windows_path) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8737352Z test_fixed_hosts_prevent_path_lookup_and_probe (test_windows_boundary.WindowsBoundaryTests.test_fixed_hosts_prevent_path_lookup_and_probe) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8739291Z test_invalid_control_characters_fail_cleanly (test_windows_boundary.WindowsBoundaryTests.test_invalid_control_characters_fail_cleanly) ... skipped 'Windows invalid control characters'
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8740559Z test_known_wsl_is_rejected_even_if_injected_probe_claims_success (test_windows_boundary.WindowsBoundaryTests.test_known_wsl_is_rejected_even_if_injected_probe_claims_success) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8742124Z test_missing_fallback_is_not_probed (test_windows_boundary.WindowsBoundaryTests.test_missing_fallback_is_not_probed) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8743741Z test_native_conversion_preserves_trailing_space (test_windows_boundary.WindowsBoundaryTests.test_native_conversion_preserves_trailing_space) ... skipped 'native trailing whitespace'
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8745085Z test_native_path_character_matrix_and_non_injection (test_windows_boundary.WindowsBoundaryTests.test_native_path_character_matrix_and_non_injection) ... skipped 'real native Windows filesystem objects'
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8746332Z test_non_windows_path_does_not_probe_native_suitability (test_windows_boundary.WindowsBoundaryTests.test_non_windows_path_does_not_probe_native_suitability) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8747424Z test_positive_path_fallback_and_failed_suitability (test_windows_boundary.WindowsBoundaryTests.test_positive_path_fallback_and_failed_suitability) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8752488Z test_probe_is_static_bounded_and_isolates_startup_and_git_environment (test_windows_boundary.WindowsBoundaryTests.test_probe_is_static_bounded_and_isolates_startup_and_git_environment) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8771025Z test_probe_requires_success_and_exact_complete_marker (test_windows_boundary.WindowsBoundaryTests.test_probe_requires_success_and_exact_complete_marker) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8780446Z test_probe_start_failure_and_timeout_fail_closed (test_windows_boundary.WindowsBoundaryTests.test_probe_start_failure_and_timeout_fail_closed) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8835699Z test_real_non_windows_bash_fails_native_suitability (test_windows_boundary.WindowsBoundaryTests.test_real_non_windows_bash_fails_native_suitability) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8837455Z test_real_nonstandard_git_path_fallback_passes_positive_probe (test_windows_boundary.WindowsBoundaryTests.test_real_nonstandard_git_path_fallback_passes_positive_probe) ... skipped 'real native Windows nonstandard Git installation path'
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8852406Z test_real_unrelated_executable_cannot_qualify_as_bash (test_windows_boundary.WindowsBoundaryTests.test_real_unrelated_executable_cannot_qualify_as_bash) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8857052Z test_windows_never_looks_up_path_before_host_selection (test_windows_boundary.WindowsBoundaryTests.test_windows_never_looks_up_path_before_host_selection) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8869155Z test_windows_path_discovery_only_after_both_fixed_hosts_absent (test_windows_boundary.WindowsBoundaryTests.test_windows_path_discovery_only_after_both_fixed_hosts_absent) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.8879612Z test_workflow_contract_rejects_skipping_or_tolerating_assertion (test_windows_boundary.WindowsBoundaryTests.test_workflow_contract_rejects_skipping_or_tolerating_assertion) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9018532Z test_workflow_prerequisite_result_matrix (test_windows_boundary.WindowsBoundaryTests.test_workflow_prerequisite_result_matrix) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9023586Z test_workflow_success_keeps_immutable_runner_and_tests (test_windows_boundary.WindowsBoundaryTests.test_workflow_success_keeps_immutable_runner_and_tests) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9026344Z test_wsl_and_arbitrary_path_hosts_rejected_without_fixed_git (test_windows_boundary.WindowsBoundaryTests.test_wsl_and_arbitrary_path_hosts_rejected_without_fixed_git) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9030941Z test_contract_rejects_broad_missing_or_filtered_events (test_windows_boundary.WorkflowTriggerTests.test_contract_rejects_broad_missing_or_filtered_events) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9032952Z test_integrity_event_boundary_matches_verification_gate (test_windows_boundary.WorkflowTriggerTests.test_integrity_event_boundary_matches_verification_gate) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9034932Z test_pr_heads_and_main_push_are_in_scope_feature_first_push_is_not (test_windows_boundary.WorkflowTriggerTests.test_pr_heads_and_main_push_are_in_scope_feature_first_push_is_not) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9041560Z test_required_context_and_original_base_sources_are_preserved (test_windows_boundary.WorkflowTriggerTests.test_required_context_and_original_base_sources_are_preserved) ... ok
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9043504Z 
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9043765Z ----------------------------------------------------------------------
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9044344Z Ran 96 tests in 22.973s
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9044588Z 
+verification-gate	Validate Manual Verification Bridge	2026-10-22T12:03:08.9044743Z OK (skipped=6)
+verification-gate	Post Checkout	﻿2026-10-22T12:03:08.9462512Z Post job cleanup.
+verification-gate	Post Checkout	2026-10-22T12:03:09.0407013Z [command]/usr/bin/git version
+verification-gate	Post Checkout	2026-10-22T12:03:09.0435276Z git version 2.55.0
+verification-gate	Post Checkout	2026-10-22T12:03:09.0480836Z Temporarily overriding HOME='/home/runner/work/_temp/41147c72-5c4c-4cdd-ad31-311453d6b655' before making global git config changes
+verification-gate	Post Checkout	2026-10-22T12:03:09.0482381Z Adding repository directory to the temporary git global config as a safe directory
+verification-gate	Post Checkout	2026-10-22T12:03:09.0488222Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/host/host
+verification-gate	Post Checkout	2026-10-22T12:03:09.0543123Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verification-gate	Post Checkout	2026-10-22T12:03:09.0589411Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verification-gate	Post Checkout	2026-10-22T12:03:09.1012023Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verification-gate	Post Checkout	2026-10-22T12:03:09.1078052Z http.https://github.com/.extraheader
+verification-gate	Post Checkout	2026-10-22T12:03:09.1080631Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verification-gate	Post Checkout	2026-10-22T12:03:09.1144992Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verification-gate	Complete job	﻿2026-10-22T12:03:09.1738503Z Cleaning up orphan processes
+verification-gate	Complete job	2026-10-22T12:03:09.2193070Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
